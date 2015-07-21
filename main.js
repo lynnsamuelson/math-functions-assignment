@@ -25,14 +25,18 @@
  function multiply (num1, num2) {
  	return num1 * num2;
  }
-console.log(multiply(1, 2));
- function divide (num3, num4) {
- 	return num3 / num4;
+
+ function divide (num1, num2) {
+ 	return num1 / num2;
  }
 
-var result = myFunction(multiply, divide, func) {
-	func(multiply, divide);
+function myFunction(num1, num2, func) {
+	return func(num1, num2);
 }
 
+var a = myFunction(3, 2, multiply);
 
-console.log(result);
+console.log(myFunction(4,4, divide));
+console.log(a);
+
+
